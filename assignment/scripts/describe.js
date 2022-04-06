@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called name and set the name as "Dane". 
+// We evaluate if name is strict equal to 'Mary'.
+// Console log 'Hi, Mary!' won't run since Mary does not equal to name.
+// Else console.log 'How do you do?' will print since Mary is not equal to name.
 
 //CODE
 /*
@@ -45,10 +45,11 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable called 'secret' and leave it undefined.
+// We make a second variable called 'code' and assign it to the number '123'.
+// We check if code is equal to super, if true, secret will print 'super' and code number 123 will multiply by 2.
+// We check if code is less than 250, if true, secret will print 'duper'.
+// We console log 'secret', and 'super' will print.
 
 //CODE
 /*
@@ -70,10 +71,12 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable 'isStudent' and set it as 'true'.
+// We make another variable 'age' and set it as '34'.
+// We make a third variable 'zip' and set it as '55407'
+// We check if 'isStudent' is equal's true and if zip is greater than 8000, but zip is not greater than 8000 and won't run console log.
+// We check else if 'isStudent' is equal to false or if age is less than 30, but both statments are false and won't run console log.
+// We check else if 'isStudent' is equal to true'. Console log is 'Welcome to Prime!' will print since isStudent is true, no need to check other conditional.
 
 //CODE
 /*
@@ -130,10 +133,15 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// Fix - colorOne should be set to 'blue' and colorTwo should be set to 'red'.
+// Should be: colorOne = 'blue'; 
+// Should be: colorTwo = 'red';
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// Fix - colorTwo is missing, since mix equals true, both colorOne and colorTwo should be set to 'purple'.
+// Within the if conditional below ' colorOne = 'purple'; ' should add: colorTwo = 'purple'; 
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -147,6 +155,8 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+// Fix - The if conditional should contain the and operator '&&' and not the or operator '||'.
+// Should be: (temp > 39 && time >=4) 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -160,8 +170,13 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+// Fix - minAge should be greater than or equal to age, but it is listed as minAge is less than or equal to age. 
+// Fix - Console statement is set to 'not entry' and should be changed to 'enter'.
+// Should be: (minAge >= age) and console.log('enter'); 
 if(minAge <= age) {
   console.log('no entry');
+//Fix - Console log statement is set to 'enter' and needs to change to 'no entry'.
+// Should be: console.log('no entry');
 } else {
   console.log('enter');
 }
